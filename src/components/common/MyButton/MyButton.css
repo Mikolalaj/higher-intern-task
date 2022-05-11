@@ -39,7 +39,7 @@ p {
 .button:active {
   transform: scale(0.97);
 }
-.button.buttondisabled {
+.button.disabled {
   background: #999999;
   cursor: default;
   transform: none;
