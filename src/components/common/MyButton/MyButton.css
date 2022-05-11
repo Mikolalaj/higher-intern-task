@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.App {
+  text-align: center;
+}
+body {
+  margin: 90px 0 0 0;
+}
+* {
+  font-family: 'Roboto Flex', sans-serif;
+}
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 70px;
+  font-weight: 500;
+  color: #ac5fca;
+}
+@media only screen and (max-width: 550px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+p {
+  font-weight: 300;
+}
+.button {
+  background: #ac5fca;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 7px;
+  cursor: pointer;
+  text-align: center;
+  min-width: 80px;
+}
+.button:hover {
+  background: #963db9;
+}
+.button:active {
+  transform: scale(0.97);
+}
+.button.buttondisabled {
+  background: #999999;
+  cursor: default;
+  transform: none;
+}
+/*# sourceMappingURL=MyButton.css.map */

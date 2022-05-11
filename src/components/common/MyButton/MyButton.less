@@ -1,0 +1,23 @@
+@import "../../../App.less";
+
+.button {
+    background: @primary-color;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 7px;
+    cursor: pointer;
+    text-align: center;
+    min-width: 80px;
+    &:hover {
+        background: @primary-color-hover;
+    }
+    &:active {
+        transform: scale(0.97);
+    }
+    &&disabled {
+        background: #999999;
+        cursor: default;
+        transform: none;
+    }
+}

@@ -1,18 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Radio+Canada:wght@300;400;500;600;700&family=Satisfy&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700&display=swap');
 .App {
-    text-align: center;
+  text-align: center;
 }
-
 body {
-    margin: 90px 0 0 0;
+  margin: 90px 0 0 0;
 }
-
 * {
-    font-family: 'Quicksand', sans-serif;
+  font-family: 'Roboto Flex', sans-serif;
 }
-
 h1 {
-    font-size: 65px;
-    color: #ac5fca;
+  font-size: 65px;
+  color: #ac5fca;
 }
+@media only screen and (max-width: 550px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+/*# sourceMappingURL=App.css.map */

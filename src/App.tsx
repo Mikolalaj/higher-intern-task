@@ -1,4 +1,4 @@
-import ImageListing from './components/ImageListing';
+import ImageListing from './components/ImageListing/ImageListing';
 import './App.css';
 
 function App() {

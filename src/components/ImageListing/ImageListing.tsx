@@ -1,7 +1,7 @@
-import MyImage from './MyImage'
-import fetchAPI from '../hooks/fetchAPI'
-import MyButton from './common/MyButton';
-import Loading from './common/Loading';
+import MyImage from '../MyImage/MyImage'
+import fetchAPI from '../../hooks/fetchAPI'
+import MyButton from '../common/MyButton/MyButton';
+import Loading from '../common/Loading/Loading';
 import { useState, useEffect, useMemo } from 'react';
 import './ImageListing.css'
 

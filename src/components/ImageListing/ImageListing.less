@@ -1,3 +1,6 @@
+@import "../../App.less";
+
+
 .images-listing {
     margin: 50px 0;
     display: flex;
@@ -6,6 +9,11 @@
     justify-content: space-around;
     align-items: center;
     min-height: 300px;
+
+    @media @tablet {
+        flex-direction: column;
+        margin: 30px 0;
+    }
 }
 
 .buttons {
@@ -17,17 +25,12 @@
 }
 
 .page-count {
+    font-weight: 400;
     font-size: 20px;
     margin-top: 100px;
-}
 
-@media only screen and (max-width: 1000px) {
-    .images-listing {
-        flex-direction: column;
-        margin: 30px 0;
-    }
-
-    .page-count {
+    @media @tablet {
         margin-top: 0;
     }
 }
+
