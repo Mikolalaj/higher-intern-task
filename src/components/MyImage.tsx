@@ -14,7 +14,7 @@ function MyImage({ id, imageURL, author }: MyImageProps): JSX.Element {
 
     return (
         <div className='image-box'>
-            <img className='image' src={changeURL(imageURL)} alt={`Photo by ${author}`} />
+            <img className='image' src={changeURL(imageURL)} alt={`By ${author}`} />
             <p className='description'>{author} ({id})</p>
         </div>
     );
