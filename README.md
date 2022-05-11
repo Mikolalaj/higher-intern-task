@@ -1,1 +1,1 @@
-## Project for frontend intern
+## Project for frontend intern in Higher

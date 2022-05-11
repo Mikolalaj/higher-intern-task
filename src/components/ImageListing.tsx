@@ -1,6 +1,7 @@
 import MyImage from './MyImage'
 import fetchAPI from '../hooks/fetchAPI'
 import MyButton from './common/MyButton';
+import Loading from './common/Loading';
 import { useState, useEffect, useMemo } from 'react';
 import './ImageListing.css'
 
@@ -35,9 +36,9 @@ function ImageListing() {
 
     return (
     <div>
-        {state.isLoading ? <h1>Loading...</h1> :
         <div className='images-listing'>
-            {imagesCurrentPage.map((image, index) => (
+            {state.isLoading ? <Loading /> :
+            imagesCurrentPage.map((image, index) => (
                 <MyImage
                     key={index}
                     id={image.id}
@@ -45,7 +46,7 @@ function ImageListing() {
                     author={image.author}
                 />
             ))}
-        </div>}
+        </div>
         <p className='page-count'>Page {currentPage}/{images.length/3}</p>
         <div className='buttons'>
             <MyButton

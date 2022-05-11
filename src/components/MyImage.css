@@ -1,6 +1,10 @@
 .image-box {
     width: 30%;
-    height: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .image-box .image {
@@ -15,3 +19,14 @@
     margin-bottom: auto;
 }
 
+@media only screen and (max-width: 1000px) {
+    .image-box {
+        height: auto;
+        width: 50%;
+        margin: 25px 0;
+    }
+
+    .image-box .image {
+        height: auto;
+    }
+}
